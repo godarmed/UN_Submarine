@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eseasky.submarine.core.starters.dictionary.module.service.impl.SystemManagerServiceImpl,\
+com.eseasky.submarine.core.starters.dictionary.DictConfigHelperImpl

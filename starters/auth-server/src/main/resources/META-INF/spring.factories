@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eseasky.submarine.core.starters.authserver.impl.DefaultClientServiceImpl,\
+com.eseasky.submarine.core.starters.authserver.ClientCheckService,\
+com.eseasky.submarine.core.starters.authserver.ClientUserDetailService,\
+com.eseasky.submarine.core.starters.authserver.AuthServerConfig

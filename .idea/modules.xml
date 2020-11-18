@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/framework/admin/admin.iml" filepath="$PROJECT_DIR$/framework/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/auth-client/auth-client.iml" filepath="$PROJECT_DIR$/starters/auth-client/auth-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/auth-server/auth-server.iml" filepath="$PROJECT_DIR$/starters/auth-server/auth-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/framework/auth-service/auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/datasource/datasource.iml" filepath="$PROJECT_DIR$/starters/datasource/datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-demo/default-demo/default-demo.iml" filepath="$PROJECT_DIR$/micro-demo/default-demo/default-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/dictionary/dictionary.iml" filepath="$PROJECT_DIR$/starters/dictionary/dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/global/global.iml" filepath="$PROJECT_DIR$/starters/global/global.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/starters/httpclient/httpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/logging-aop/logging-aop.iml" filepath="$PROJECT_DIR$/starters/logging-aop/logging-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-demo/micro-demo.iml" filepath="$PROJECT_DIR$/micro-demo/micro-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/starters/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/redis/redis.iml" filepath="$PROJECT_DIR$/starters/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/starters.iml" filepath="$PROJECT_DIR$/starters/starters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/submarine.iml" filepath="$PROJECT_DIR$/submarine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starters/system/system.iml" filepath="$PROJECT_DIR$/starters/system/system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/system-service/system-service.iml" filepath="$PROJECT_DIR$/framework/system-service/system-service.iml" />
+    </modules>
+  </component>
+</project>

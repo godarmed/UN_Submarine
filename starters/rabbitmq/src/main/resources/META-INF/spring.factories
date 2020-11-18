@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eseasky.submarine.core.starters.rabbitmq.RabbitMQConfig,\
+com.eseasky.submarine.core.starters.rabbitmq.rpc.client.Client,\
+com.eseasky.submarine.core.starters.rabbitmq.service.impl.MqServiceImpl

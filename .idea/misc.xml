@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/global/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/system-service/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/dictionary/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/logging-aop/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/framework/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/logger-service/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/report-service/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/feign-wrapper/pom.xml" />
+        <option value="$PROJECT_DIR$/starters/logger-client/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="9.0" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>

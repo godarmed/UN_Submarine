@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
+        <module name="auth-client" />
+        <module name="auth-server" />
+        <module name="auth-service" />
+        <module name="datasource" />
+        <module name="default-demo" />
+        <module name="dictionary" />
+        <module name="global" />
+        <module name="httpclient" />
+        <module name="logging-aop" />
+        <module name="rabbitmq" />
+        <module name="redis" />
+        <module name="system" />
+        <module name="system-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin" target="1.8" />
+      <module name="auth-client" target="1.8" />
+      <module name="auth-server" target="1.8" />
+      <module name="auth-service" target="1.8" />
+      <module name="datasource" target="1.8" />
+      <module name="default-demo" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="dictionary" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="feign-wrapper" target="1.8" />
+      <module name="framework" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="global" target="1.8" />
+      <module name="httpclient" target="1.8" />
+      <module name="logger" target="1.8" />
+      <module name="loggerclient" target="1.5" />
+      <module name="logging-aop" target="11" />
+      <module name="micro-demo" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="report" target="1.8" />
+      <module name="starters" target="1.8" />
+      <module name="submarine" target="1.8" />
+      <module name="system" target="1.8" />
+      <module name="system-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

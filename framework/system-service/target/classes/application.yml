@@ -1,0 +1,114 @@
+server:
+  port: 9717
+  servlet:
+    context-path: /SystemService
+  tomcat:
+    basedir: ${TOMCAT_BASE_DIR}
+
+logging: 
+  config: classpath:log4j2.yml   # 配置log4j2读取的配置文件
+  file: ../springlogs/systemservice.log 
+
+spring:
+  profiles:
+    active: "dev"
+#  datasource:
+#   initialization-mode: ALWAYS
+#   continue-on-error: true
+#   data:
+#   - classpath:schema/data.sql
+#   sql-script-encoding: UTF-8
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  application:
+    name: system-service
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    database: 3
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+    testWhileIdle: true
+    minEvictableIdleTimeMillis: 60000
+    timeBetweenEvictionRunsMillis: 30000
+    numTestsPerEvictionRun: -1
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 1
+
+sharding:
+  jdbc:
+    datasource:
+      names: master,slave0
+      master:
+        type: org.apache.commons.dbcp.BasicDataSource
+        url: ${DB_MASTER_URL}
+        username: ${DB_MASTER_USER}
+        password: ${DB_MASTER_PWD}
+        maxActive: 20
+        validationQuery: SELECT 1
+        testOnBorrow: false
+        timeBetweenEvictionRunsMillis: 300000
+        testWhileIdle: true
+        minEvictableIdleTimeMillis: 1800000
+        initialSize: 5
+        minIdle: 3
+        maxWait: 30000
+      slave0:
+        type: org.apache.commons.dbcp.BasicDataSource
+        url: ${DB_SLAVE_URL}
+        username: ${DB_SLAVE_USER}
+        password: ${DB_SLAVE_PWD}
+        maxActive: 20
+        validationQuery: SELECT 1
+        testOnBorrow: false
+        timeBetweenEvictionRunsMillis: 300000
+        testWhileIdle: true
+        minEvictableIdleTimeMillis: 1800000
+        initialSize: 5
+        minIdle: 3
+        maxWait: 30000
+    config:
+      masterslave:
+        load-balance-algorithm-type: ROUND_ROBIN
+        name: ds_ms
+        master-data-source-name: master
+        slave-data-source-names: slave0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+
+#安全配置
+#oauth2配置
+#security:
+#  oauth2:
+#    resource:
+#      user-info-uri: http://${AUTH_HOST}/AuthService/user #获取当前Token的用户信息
+#    client:
+#      clientId: system-service
+#      clientSecret: 123456
+#      accessTokenUri: http://${AUTH_HOST}/AuthService/oauth/token #获取Token
+#      user-authorization-uri: http://${AUTH_HOST}/AuthService/oauth/authorize
+#      grant-type: client_credentials,password,authorization_code,implicit,refresh_token
+#      pre-established-redirect-uri: http://baidu.com
+#      scope: all
+#      ignoreUrl: /actuator/**,/dict/queryByTypeAndGroup,/SystemService/dict/queryByTypeAndGroup
+
+
+

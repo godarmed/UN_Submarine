@@ -1,0 +1,9 @@
+DB_MASTER_URL: jdbc:mysql://47.101.136.249:18765/test?useUnicode=true&characterEncoding=UTF-8
+DB_MASTER_USER: root
+DB_MASTER_PWD: zzy123456
+DB_SLAVE_URL: jdbc:mysql://47.101.136.249:18765/test?useUnicode=true&characterEncoding=UTF-8
+DB_SLAVE_USER: root
+DB_SLAVE_PWD: zzy123456
+REDIS_HOST: localhost
+REDIS_PORT: 6379
+#AUTH_HOST: 192.168.1.217:31208

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eseasky.submarine.core.starters.authclient.ResourceServerConfigurer,\
+com.eseasky.submarine.core.starters.authclient.UserManager

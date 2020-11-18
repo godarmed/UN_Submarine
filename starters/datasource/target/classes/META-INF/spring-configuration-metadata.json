@@ -1,0 +1,24 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.datasource.DataBaseProperties",
+      "name": "database",
+      "type": "com.eseasky.submarine.core.starters.datasource.DataBaseProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.datasource.DataBaseProperties",
+      "defaultValue": false,
+      "name": "database.isopen",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.datasource.DataBaseProperties",
+      "defaultValue": "PM_",
+      "name": "database.prefix",
+      "type": "java.lang.String"
+    }
+  ]
+}

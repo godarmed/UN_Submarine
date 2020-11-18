@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.authclient.AuthClientProperties",
+      "name": "security.oauth2.client",
+      "type": "com.eseasky.submarine.core.starters.authclient.AuthClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.authclient.AuthClientProperties",
+      "name": "security.oauth2.client.client-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.authclient.AuthClientProperties",
+      "name": "security.oauth2.client.ignore-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.eseasky.submarine.core.starters.authclient.AuthClientProperties",
+      "name": "security.oauth2.client.user-service",
+      "type": "java.lang.String"
+    }
+  ]
+}
